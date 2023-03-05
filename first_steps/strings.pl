@@ -7,12 +7,12 @@ use warnings;
 
 ## Strings
 # scalar literal
-print "hello world\n";                                # hello world
+print "hello world\n";                                  # hello world
 
 {
     print "Braces\n";                                   # Braces
     print "can help clear up\n";                        # can help clear up
-    print "things\n";                                 # things
+    print "things\n";                                   # things
 }
 
 print ("parentheses ", "are ", "optional\n");           # parentheses are optional
@@ -21,9 +21,9 @@ print "to ", "make ", "reading ", "easier\n";           # to make reading easier
 print ("be careful, it'll drop things\n"), "like";      # be careful, it'll drop things     Useless use of a constant ("like") in void context
 
 # double-quoted strings are interpolated
-print ("this\tis\tinterpolated\n");                   # this    is      interpolated
+print ("this\tis\tinterpolated\n");                     # this    is      interpolated
 # single-quoted strings are not interpolated
-print ('this\tis\tnot\tinterpolated', "\n");          # this\tis\tnot\tinterpolated
+print ('this\tis\tnot\tinterpolated', "\n");            # this\tis\tnot\tinterpolated
 
 # escape characters are like regex escapes
 print 'ex\\ er\\' , ' ci\' se\'' , "\n";                # ex\ er\ ci' se'
