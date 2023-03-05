@@ -72,4 +72,18 @@ print "Repeat!"x3, "\n";                                # Repeat!Repeat!Repeat!
 print ("n"x3*4 . "\n");                                 # 0                                 Argument "nnn" isn't numeric in multiplication (*)
 print ("n"x(3*4) . "\n");                               # nnnnnnnnnnnn
 
-# Converting to numbers
+# Comparison by character code
+# gt, lt, ne, ge, le, cmp
+print "hello" lt "hi", "\n";                            # 1
+print "aisle" cmp "zebra", "\n";                        # -1
+
+# terniary x?y:z
+print 1?"first":"second", "\n";                         # first
+
+# range ...
+# list builder ,
+# magic =>
+# regex =~ !~
+# escape \
+# bitshift << >>
+# magic ->
