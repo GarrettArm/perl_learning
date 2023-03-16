@@ -20,3 +20,13 @@ print(@text);
 ## writing
 open NEWFILE, "> trash.txt" or die $!;
 print NEWFILE @text;
+
+
+## binary files
+
+# open binmode FILEHANDLE, ........
+
+## getting output from another script
+open LISTOUTPUT, "perl lists.pl |" or die $!;
+my @output = <LISTOUTPUT>;
+print @output;
