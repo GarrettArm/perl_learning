@@ -44,3 +44,5 @@ for (keys %who) {
 for (values %who) {
     print $_, "\n";
 }
+
+print (!exists $who{'absent key'}, "\n")        #1

@@ -21,3 +21,5 @@ print "3 + 4 * 10 = ", 3 + 4 * 10, "\n\n";
 # negative sign lower in order of operations than power:  -1**2 == -1 
 print -2**4, " -2**4 acts like -(2**4)\n"; 
 print ((-2)**4, " (-2)**4\n");
+
+# > == < 
