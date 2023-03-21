@@ -25,3 +25,12 @@ undef $veryOuter;
 # variables are out of scope
 # print $veryOuter;                                                 # Use of uninitialized value $veryOuter
 # print $record;                                                    # Variable "$record" is not imported
+
+
+# declaring other packages
+# getting variable from other package
+our $var3 = 8;
+package Other;
+our $var3 = 5;
+package main;
+print $Other::var3, "\n";                                           # 5
