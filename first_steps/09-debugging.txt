@@ -1,0 +1,39 @@
+#!/usr/bin/perl
+# diagtest.plx
+use warnings;
+use strict;
+use diagnostics;
+
+# use diagnostics; gives more verbose error reports
+
+Command-line arguments for `perl`
+-w  give warnings
+-e  run code snippet
+        `perl -e 'print hi;'
+-c  check code.  dont run
+-d  debug mode
+
+Debugger commands
+
+T           Obtain a 'call trace' of all the subroutines perl is currently processing. This
+will tell you how you got to be where you are.
+s           Step to the next line as you go one line at a time through your program.
+n           Step over a subroutine. Call the subroutine reference on the current line, and
+stop again once control has returned from that.
+Return      Repeat the last stepping command.
+r           Keep going until the current subroutine returns.
+c           Continue – keep going until something happens that causes the debugger to
+stop again.
+l           List the next few lines to be processed.
+-           List the previous lines processed.
+w           List the lines around the current line.
+/pattern/   Search forwards in the program code until the pattern matches.
+t           Turn on (or off) trace mode. This prints every statement before executing it.
+b           Set a breakpoint. Stop running the program and return to the debugger at the
+given line number or when the given condition is true.
+x           Evaluate something in array context and give a tree view of the resulting data
+structure.
+!           Do the previous command again.
+p           Print something out.
+h           Get more help.
+
